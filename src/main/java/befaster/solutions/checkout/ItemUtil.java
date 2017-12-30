@@ -30,7 +30,9 @@ public class ItemUtil {
             //finalAmount+=map.get(key).calculatePrice(itemsWithCount.get(key));
             ItemOffer itemOffer = map.get(key).getItemOffer();
             if(itemOffer!=null){
-
+                if(finalItems.contains(itemOffer.getFreeItem().getName())){
+                    while ()
+                }
             }
         }
         return null;
