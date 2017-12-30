@@ -42,8 +42,8 @@ public class Item {
         }
         else
         {
-            System.out.println(offer.getQuantity()%quantity==0);
-            if(offer.getQuantity()%quantity==0){
+            System.out.println(quantity!=1 && offer.getQuantity()%quantity==0);
+            if(quantity!=1 && offer.getQuantity()%quantity==0){
                 return (quantity/offer.getQuantity()*offer.getAmount());
             }
             else{

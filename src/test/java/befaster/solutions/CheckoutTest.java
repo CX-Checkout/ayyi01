@@ -8,8 +8,8 @@ import org.junit.Test;
 public class CheckoutTest {
     @Test
     public void testCheckout(){
-        //System.out.println(Checkout.checkout("ABCD"));
+        System.out.println(Checkout.checkout("AABBCDD"));
 
-        System.out.println(3%4);
+
     }
 }
