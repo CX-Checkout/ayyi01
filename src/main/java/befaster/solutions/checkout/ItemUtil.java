@@ -42,7 +42,7 @@ public class ItemUtil {
                             }
 
                             System.out.println("to repalce::"+toReplace);
-                            finalItems = finalItems.replace(toReplace,"");
+                            finalItems = finalItems.replaceFirst(toReplace,"");
                             itemCount -=itemOffer.getItemQuantity();
                         }
                     }
