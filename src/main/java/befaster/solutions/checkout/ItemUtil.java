@@ -34,7 +34,13 @@ public class ItemUtil {
                     int itemCount = itemsWithCount.get(key);
                     while (itemCount!=0){
                         if(itemCount>=itemOffer.getItemQuantity()){
-                            String toReplace = String.format("0%"+itemOffer.getFreeItemQuantity()+"d",0).replace("0",itemOffer.getFreeItem().getName()).replace(" ","");
+
+                            String toReplace = "";
+
+                            for(int i=1;i<=itemOffer.getFreeItemQuantity();i++){
+                                toReplace+=itemOffer.getFreeItem().getName();
+                            }
+
                             System.out.println("to repalce::"+toReplace);
                             finalItems = finalItems.replace(toReplace,"");
                             itemCount -=itemOffer.getItemQuantity();

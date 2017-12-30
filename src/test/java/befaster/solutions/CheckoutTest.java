@@ -8,7 +8,7 @@ import org.junit.Test;
 public class CheckoutTest {
     @Test
     public void testCheckout(){
-        System.out.println(Checkout.checkout("EEB"));
+        System.out.println(Checkout.checkout("EEEB"));
 
 
     }
