@@ -32,8 +32,6 @@ public class Checkout {
 
         int finalAmount = 0;
         for(String key:itemsWithCount.keySet()){
-            System.out.println("key::"+key);
-           // System.out.println("amt::"+map.get(key).calculatePrice(itemsWithCount.get(key)));
             finalAmount+=map.get(key).calculatePrice(itemsWithCount.get(key));
         }
         return finalAmount;
