@@ -37,10 +37,12 @@ public class Item {
 
     public int calculatePrice(int quantity){
         if(offer==null){
+            System.out.println("heeeree");
             return quantity*price;
         }
         else
         {
+            System.out.println(offer.getQuantity()%quantity==0);
             if(offer.getQuantity()%quantity==0){
                 return (quantity/offer.getQuantity()*offer.getAmount());
             }
