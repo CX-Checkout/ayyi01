@@ -59,12 +59,24 @@ public class ItemMap {
         e.setName("E");
         e.setPrice(40);
 
-        ItemOffer itemOffer = new ItemOffer();
-        itemOffer.setFreeItem(b);
-        itemOffer.setItemQuantity(2);
-        itemOffer.setFreeItemQuantity(1);
+        ItemOffer itemOfferB = new ItemOffer();
+        itemOfferB.setFreeItem(b);
+        itemOfferB.setItemQuantity(2);
+        itemOfferB.setFreeItemQuantity(1);
 
-        e.setItemOffer(itemOffer);
+        e.setItemOffer(itemOfferB);
+
+
+        Item f = new Item();
+        f.setName("F");
+        f.setPrice(40);
+
+        ItemOffer itemOfferF = new ItemOffer();
+        itemOfferF.setFreeItem(b);
+        itemOfferF.setItemQuantity(2);
+        itemOfferF.setFreeItemQuantity(1);
+
+        f.setItemOffer(itemOfferF);
 
 
         itemMap.put("A",a);
@@ -72,6 +84,7 @@ public class ItemMap {
         itemMap.put("C",c);
         itemMap.put("D",d);
         itemMap.put("E",e);
+        itemMap.put("F",f);
 
     }
 
