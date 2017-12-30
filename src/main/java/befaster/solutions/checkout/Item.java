@@ -16,6 +16,9 @@ public class Item {
     private List<Offer> offerList;
 
 
+    private ItemOffer itemOffer;
+
+
     public String getName() {
         return name;
     }
@@ -40,6 +43,15 @@ public class Item {
     public void setOfferList(List<Offer> offerList) {
         this.offerList = offerList;
     }
+
+    public ItemOffer getItemOffer() {
+        return itemOffer;
+    }
+
+    public void setItemOffer(ItemOffer itemOffer) {
+        this.itemOffer = itemOffer;
+    }
+
 
 
     public int calculatePrice(int quantity){

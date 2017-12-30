@@ -64,6 +64,8 @@ public class ItemMap {
         itemOffer.setItemQuantity(2);
         itemOffer.setFreeItemQuantity(1);
 
+        e.setItemOffer(itemOffer);
+
 
         itemMap.put("A",a);
         itemMap.put("B",b);
