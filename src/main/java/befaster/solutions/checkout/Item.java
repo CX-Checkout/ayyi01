@@ -36,14 +36,15 @@ public class Item {
 
 
     public int calculatePrice(int quantity){
+        System.out.println("quantity::"+quantity);
         if(offer==null){
             System.out.println("heeeree");
             return quantity*price;
         }
         else
         {
-            System.out.println(quantity!=1 && offer.getQuantity()%quantity==0);
-            if(quantity!=1 && offer.getQuantity()%quantity==0){
+            System.out.println(quantity%offer.getQuantity()==0);
+            if(quantity%offer.getQuantity()==0){
                 return (quantity/offer.getQuantity()*offer.getAmount());
             }
             else{
