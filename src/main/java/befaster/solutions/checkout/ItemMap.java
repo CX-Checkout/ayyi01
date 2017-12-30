@@ -56,8 +56,8 @@ public class ItemMap {
         d.setPrice(15);
 
         Item e = new Item();
-        d.setName("E");
-        d.setPrice(40);
+        e.setName("E");
+        e.setPrice(40);
 
 
         itemMap.put("A",a);
