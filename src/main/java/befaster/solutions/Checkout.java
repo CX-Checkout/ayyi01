@@ -1,6 +1,8 @@
 package befaster.solutions;
 
 import befaster.runner.SolutionNotImplementedException;
+import befaster.solutions.checkout.Item;
+import befaster.solutions.checkout.ItemMap;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -24,6 +26,14 @@ public class Checkout {
                 itemsWithCount.put(character,1);
             }
         }
-        return 0;
+
+        ItemMap itemMap = new ItemMap();
+        Map<String, Item> map = itemMap.getItemMap();
+
+        int finalAmount = 0;
+        for(String key:itemsWithCount.keySet()){
+            finalAmount+=map.get(key).calculatePrice(itemsWithCount.get(key));
+        }
+        return finalAmount;
     }
 }
