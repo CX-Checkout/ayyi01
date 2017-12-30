@@ -17,6 +17,6 @@ public class CheckoutTest {
     public void testIt(){
         int n = 2;
         String s = "hello";
-        System.out.println(String.format("0%"+n+"d",0).replace("0",s));
+        System.out.println(String.format("0%"+n+"d",0).replace("0",s).replace(" ",""));
     }
 }
