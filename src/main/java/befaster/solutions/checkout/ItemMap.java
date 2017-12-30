@@ -17,10 +17,22 @@ public class ItemMap {
         a.setName("A");
         a.setPrice(50);
 
+        Offer oa = new Offer();
+        oa.setQuantity(3);
+        oa.setAmount(130);
+
+        a.setOffer(oa);
+
 
         Item b = new Item();
         b.setName("B");
         b.setPrice(30);
+
+        Offer ob = new Offer();
+        ob.setQuantity(2);
+        ob.setAmount(45);
+
+        b.setOffer(ob);
 
 
         Item c = new Item();
@@ -30,6 +42,12 @@ public class ItemMap {
         Item d = new Item();
         d.setName("D");
         d.setPrice(15);
+
+
+        itemMap.put("A",a);
+        itemMap.put("B",b);
+        itemMap.put("C",c);
+        itemMap.put("D",d);
 
     }
 

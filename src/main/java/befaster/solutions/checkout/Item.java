@@ -35,5 +35,20 @@ public class Item {
     }
 
 
+    public int calculatePrice(int quantity){
+        if(offer==null){
+            return quantity*price;
+        }
+        else
+        {
+            if(offer.getQuantity()%quantity==0){
+                return (quantity/offer.getQuantity()*offer.getAmount());
+            }
+            else{
+                return 0;
+            }
+        }
+    }
+
 
 }
