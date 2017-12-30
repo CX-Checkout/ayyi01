@@ -43,7 +43,7 @@ public class Item {
 
 
     public int calculatePrice(int quantity){
-        System.out.println("quantity::"+quantity);
+        System.out.println("quantity initial::"+quantity);
         if(offerList==null){
             return quantity*price;
         }
@@ -54,6 +54,7 @@ public class Item {
             for(Offer offer:offerList) {
 
                 System.out.println("quantity::"+quantity);
+                boolean inWhile = false;
                 if (quantity % offer.getQuantity() == 0) {
                     amount = (quantity / offer.getQuantity() * offer.getAmount());
                     break;
@@ -61,8 +62,11 @@ public class Item {
                     while (quantity > offer.getQuantity()) {
                         amount += offer.getAmount();
                         quantity = quantity - offer.getQuantity();
+                        inWhile = true;
                     }
-                    amount += quantity * price;
+                    if(inWhile) {
+                        amount += quantity * price;
+                    }
                     System.out.println("in here amount " + amount);
 
 
