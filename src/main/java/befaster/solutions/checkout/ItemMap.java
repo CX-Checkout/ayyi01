@@ -29,7 +29,7 @@ public class ItemMap {
         oaList.add(oa1);
         Collections.sort(oaList);
 
-        System.out.println("the oalist::"+oaList.get(1).getQuantity());
+        System.out.println("the oalist::"+oaList.get(0).getQuantity());
         a.setOfferList(oaList);
 
 
