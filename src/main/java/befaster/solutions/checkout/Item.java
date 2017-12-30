@@ -54,24 +54,21 @@ public class Item {
             for(Offer offer:offerList) {
 
                 System.out.println("quantity::"+quantity);
-                boolean inWhile = false;
                 if (quantity % offer.getQuantity() == 0) {
                     amount = (quantity / offer.getQuantity() * offer.getAmount());
+                    quantity = 0;
                     break;
                 } else {
                     while (quantity > offer.getQuantity()) {
                         amount += offer.getAmount();
                         quantity = quantity - offer.getQuantity();
-                        inWhile = true;
                     }
-                    if(inWhile) {
-                        amount += quantity * price;
-                    }
-                    System.out.println("in here amount " + amount);
-
-
                 }
+
             }
+            amount += quantity * price;
+            System.out.println("in here amount " + amount);
+
             return amount;
         }
     }
