@@ -31,10 +31,18 @@ public class ItemUtil {
             ItemOffer itemOffer = map.get(key).getItemOffer();
             if(itemOffer!=null){
                 if(finalItems.contains(itemOffer.getFreeItem().getName())){
-                    while ()
+                    int itemCount = itemsWithCount.get(key);
+                    while (itemCount!=0){
+                        if(itemCount>=itemOffer.getItemQuantity()){
+                            String toReplace = String.format("0%"+itemOffer.getFreeItemQuantity()+"d",0).replace("0",itemOffer.getFreeItem().getName()).replace(" ","");
+                            System.out.println("to repalce::"+toReplace);
+                            finalItems = finalItems.replace(toReplace,"");
+                            itemCount -=itemOffer.getItemQuantity();
+                        }
+                    }
                 }
             }
         }
-        return null;
+        return finalItems;
     }
 }

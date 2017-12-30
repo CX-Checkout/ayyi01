@@ -3,6 +3,7 @@ package befaster.solutions;
 import befaster.runner.SolutionNotImplementedException;
 import befaster.solutions.checkout.Item;
 import befaster.solutions.checkout.ItemMap;
+import befaster.solutions.checkout.ItemUtil;
 import org.apache.commons.codec.binary.StringUtils;
 
 import java.util.HashMap;
@@ -20,6 +21,8 @@ public class Checkout {
         if(!skus.matches("^[A-E]+")){
             return -1;
         }
+
+        skus = ItemUtil.reformatItems(skus);
 
         for(char c : skus.toCharArray()){
             String character = String.valueOf(c);
