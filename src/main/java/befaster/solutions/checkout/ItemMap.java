@@ -55,11 +55,16 @@ public class ItemMap {
         d.setName("D");
         d.setPrice(15);
 
+        Item e = new Item();
+        d.setName("E");
+        d.setPrice(40);
+
 
         itemMap.put("A",a);
         itemMap.put("B",b);
         itemMap.put("C",c);
         itemMap.put("D",d);
+        itemMap.put("E",e);
 
     }
 

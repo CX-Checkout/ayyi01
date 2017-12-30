@@ -17,7 +17,7 @@ public class Checkout {
             return 0;
         }
 
-        if(!skus.matches("^[A-D]+")){
+        if(!skus.matches("^[A-E]+")){
             return -1;
         }
 
