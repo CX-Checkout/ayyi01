@@ -20,8 +20,8 @@ public class ItemMap {
         a.setPrice(50);
 
         Offer oa = new Offer();
-        oa.setQuantity(3);
-        oa.setAmount(130);
+        oa.setQuantity(5);
+        oa.setAmount(200);
 
         Offer oa1 = new Offer();
         oa.setQuantity(3);
