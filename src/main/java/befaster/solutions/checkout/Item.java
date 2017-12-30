@@ -10,7 +10,6 @@ public class Item {
     private String name;
     private int price;
 
-    private Offer offer;
 
 
 
@@ -33,13 +32,6 @@ public class Item {
         this.price = price;
     }
 
-    public Offer getOffer() {
-        return offer;
-    }
-
-    public void setOffer(Offer offer) {
-        this.offer = offer;
-    }
 
     public List<Offer> getOfferList() {
         return offerList;
