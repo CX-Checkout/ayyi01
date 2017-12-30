@@ -7,8 +7,6 @@ import java.util.Comparator;
  */
 public class Offer implements Comparable<Offer>{
 
-
-
     private int quantity;
     private int amount;
     public int getQuantity() {
