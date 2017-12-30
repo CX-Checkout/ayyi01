@@ -51,6 +51,7 @@ public class Item {
                     quantity = quantity-offer.getQuantity();
                 }
                 amount += quantity*price;
+                System.out.println("in here amount "+amount);
                 return amount;
 
             }
