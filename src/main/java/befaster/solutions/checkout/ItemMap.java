@@ -1,6 +1,8 @@
 package befaster.solutions.checkout;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -21,7 +23,15 @@ public class ItemMap {
         oa.setQuantity(3);
         oa.setAmount(130);
 
-        a.setOffer(oa);
+        Offer oa1 = new Offer();
+        oa.setQuantity(3);
+        oa.setAmount(130);
+
+        List<Offer> oaList = new ArrayList<>();
+        oaList.add(oa);
+        oaList.add(oa1);
+
+        a.setOfferList(oaList);
 
 
         Item b = new Item();
@@ -32,7 +42,10 @@ public class ItemMap {
         ob.setQuantity(2);
         ob.setAmount(45);
 
-        b.setOffer(ob);
+        List<Offer> obList = new ArrayList<>();
+        obList.add(ob);
+
+        b.setOfferList(obList);
 
 
         Item c = new Item();

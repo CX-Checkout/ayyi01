@@ -44,25 +44,28 @@ public class Item {
 
     public int calculatePrice(int quantity){
         System.out.println("quantity::"+quantity);
-        if(offer==null){
+        if(offerList==null){
             return quantity*price;
         }
         else
         {
-            if(quantity%offer.getQuantity()==0){
-                return (quantity/offer.getQuantity()*offer.getAmount());
-            }
-            else{
-                int amount = 0;
-                while(quantity>offer.getQuantity()){
-                    amount += offer.getAmount();
-                    quantity = quantity-offer.getQuantity();
-                }
-                amount += quantity*price;
-                System.out.println("in here amount "+amount);
-                return amount;
+            int amount = 0;
 
+            for(Offer offer:offerList) {
+                if (quantity % offer.getQuantity() == 0) {
+                    return (quantity / offer.getQuantity() * offer.getAmount());
+                } else {
+                    while (quantity > offer.getQuantity()) {
+                        amount += offer.getAmount();
+                        quantity = quantity - offer.getQuantity();
+                    }
+                    amount += quantity * price;
+                    System.out.println("in here amount " + amount);
+
+
+                }
             }
+            return amount;
         }
     }
 
