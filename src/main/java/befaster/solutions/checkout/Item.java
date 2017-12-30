@@ -53,9 +53,10 @@ public class Item {
 
             for(Offer offer:offerList) {
 
-                System.out.println(quantity % offer.getQuantity() == 0);
+                System.out.println("quantity::"+quantity);
                 if (quantity % offer.getQuantity() == 0) {
                     amount = (quantity / offer.getQuantity() * offer.getAmount());
+                    break;
                 } else {
                     while (quantity > offer.getQuantity()) {
                         amount += offer.getAmount();
