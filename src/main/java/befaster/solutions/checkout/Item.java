@@ -52,6 +52,7 @@ public class Item {
             int amount = 0;
 
             for(Offer offer:offerList) {
+                System.out.println();
                 if (quantity % offer.getQuantity() == 0) {
                     return (quantity / offer.getQuantity() * offer.getAmount());
                 } else {

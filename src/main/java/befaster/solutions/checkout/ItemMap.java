@@ -21,8 +21,8 @@ public class ItemMap {
         oa.setAmount(200);
 
         Offer oa1 = new Offer();
-        oa.setQuantity(3);
-        oa.setAmount(130);
+        oa1.setQuantity(3);
+        oa1.setAmount(130);
 
         List<Offer> oaList = new ArrayList<>();
         oaList.add(oa);

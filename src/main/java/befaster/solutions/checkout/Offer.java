@@ -30,7 +30,7 @@ public class Offer implements Comparable<Offer>{
 
     @Override
     public int compareTo(Offer o) {
-        int compareQuantity = this.quantity-o.getQuantity();
+        int compareQuantity = o.getQuantity()-this.quantity;
         return compareQuantity;
     }
 }
