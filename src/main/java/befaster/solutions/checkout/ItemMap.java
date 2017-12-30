@@ -1,9 +1,6 @@
 package befaster.solutions.checkout;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Created by damatya on 12/30/17.
@@ -30,7 +27,9 @@ public class ItemMap {
         List<Offer> oaList = new ArrayList<>();
         oaList.add(oa);
         oaList.add(oa1);
+        Collections.sort(oaList);
 
+        System.out.println("the oalist::"+oaList.get(1).getQuantity());
         a.setOfferList(oaList);
 
 

@@ -1,9 +1,11 @@
 package befaster.solutions.checkout;
 
+import java.util.Comparator;
+
 /**
  * Created by damatya on 12/30/17.
  */
-public class Offer {
+public class Offer implements Comparable<Offer>{
 
 
 
@@ -25,4 +27,10 @@ public class Offer {
         this.amount = amount;
     }
 
+
+    @Override
+    public int compareTo(Offer o) {
+        int compareQuantity = this.quantity-o.getQuantity();
+        return compareQuantity;
+    }
 }
