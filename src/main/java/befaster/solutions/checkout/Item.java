@@ -1,5 +1,7 @@
 package befaster.solutions.checkout;
 
+import java.util.List;
+
 /**
  * Created by damatya on 12/30/17.
  */
@@ -9,6 +11,11 @@ public class Item {
     private int price;
 
     private Offer offer;
+
+
+
+    private List<Offer> offerList;
+
 
     public String getName() {
         return name;
@@ -32,6 +39,14 @@ public class Item {
 
     public void setOffer(Offer offer) {
         this.offer = offer;
+    }
+
+    public List<Offer> getOfferList() {
+        return offerList;
+    }
+
+    public void setOfferList(List<Offer> offerList) {
+        this.offerList = offerList;
     }
 
 
