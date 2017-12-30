@@ -69,10 +69,10 @@ public class ItemMap {
 
         Item f = new Item();
         f.setName("F");
-        f.setPrice(40);
+        f.setPrice(10);
 
         ItemOffer itemOfferF = new ItemOffer();
-        itemOfferF.setFreeItem(b);
+        itemOfferF.setFreeItem(f);
         itemOfferF.setItemQuantity(2);
         itemOfferF.setFreeItemQuantity(1);
 
