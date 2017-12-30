@@ -45,7 +45,14 @@ public class Item {
                 return (quantity/offer.getQuantity()*offer.getAmount());
             }
             else{
-                return 0;
+                int amount = 0;
+                while(quantity>offer.getQuantity()){
+                    amount += offer.getAmount();
+                    quantity = quantity-offer.getQuantity();
+                }
+                amount += quantity*price;
+                return amount;
+
             }
         }
     }
