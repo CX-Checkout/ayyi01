@@ -55,7 +55,7 @@ public class Item {
 
                 System.out.println("quantity::"+quantity);
                 if (quantity % offer.getQuantity() == 0) {
-                    amount = (quantity / offer.getQuantity() * offer.getAmount());
+                    amount += (quantity / offer.getQuantity() * offer.getAmount());
                     quantity = 0;
                     break;
                 } else {
