@@ -8,7 +8,7 @@ import org.junit.Test;
 public class CheckoutTest {
     @Test
     public void testCheckout(){
-        String  input = "AAABBCD";
+        String  input = "AAABBC";
         if(!input.matches("^[A-C]+")){
             System.out.println("-1");
         }
