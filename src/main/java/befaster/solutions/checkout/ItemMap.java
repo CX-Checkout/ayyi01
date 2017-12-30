@@ -59,6 +59,11 @@ public class ItemMap {
         e.setName("E");
         e.setPrice(40);
 
+        ItemOffer itemOffer = new ItemOffer();
+        itemOffer.setFreeItem(b);
+        itemOffer.setItemQuantity(2);
+        itemOffer.setFreeItemQuantity(1);
+
 
         itemMap.put("A",a);
         itemMap.put("B",b);
