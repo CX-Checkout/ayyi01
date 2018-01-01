@@ -10,10 +10,10 @@ public class ItemUtil {
 
     public static String reformatItems(String items){
         ItemMap itemMap = new ItemMap();
+
         Map<String, Item> map = itemMap.getItemMap();
 
         Map<String, Integer> itemsWithCount = new HashMap<>();
-
         for(char c : items.toCharArray()){
             String character = String.valueOf(c);
             if(itemsWithCount.containsKey(character)){
@@ -33,7 +33,7 @@ public class ItemUtil {
                 if(finalItems.contains(itemOffer.getFreeItem().getName())){
                     int itemCount = itemsWithCount.get(key);
                     while (itemCount>=itemOffer.getItemQuantity()){
-                        if(itemCount>=itemOffer.getItemQuantity()){
+                        if(itemCount>=itemOffer.getItemQuantity() ){
 
                             String toReplace = "";
 
@@ -44,6 +44,9 @@ public class ItemUtil {
                             System.out.println("to repalce::"+toReplace);
                             finalItems = finalItems.replaceFirst(toReplace,"");
                             itemCount -=itemOffer.getItemQuantity();
+                            if(key.equals(itemOffer.getFreeItem().getName())){
+                                itemCount--;
+                            }
                         }
                     }
                 }

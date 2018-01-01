@@ -8,15 +8,10 @@ import org.junit.Test;
 public class CheckoutTest {
     @Test
     public void testCheckout(){
-        System.out.println(Checkout.checkout("FFFFF"));
+        System.out.println(Checkout.checkout("FFFFFFAAAB"));
 
 
     }
 
-    @Test
-    public void testIt(){
-        int n = 3;
-        String s = "hello";
-        System.out.println(String.format("0%"+n+"d",0).replace("0",s).replace(" ",""));
-    }
+
 }

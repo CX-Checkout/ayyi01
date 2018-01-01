@@ -55,7 +55,6 @@ public class Item {
 
 
     public int calculatePrice(int quantity){
-        System.out.println("quantity initial::"+quantity);
         if(offerList==null){
             return quantity*price;
         }
