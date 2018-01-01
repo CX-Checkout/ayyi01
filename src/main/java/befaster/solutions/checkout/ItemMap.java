@@ -12,6 +12,7 @@ public class ItemMap {
     public ItemMap(){
         //TODO set from other source eg database
 
+        // for A
         Item a = new Item();
         a.setName("A");
         a.setPrice(50);
@@ -32,6 +33,7 @@ public class ItemMap {
         a.setOfferList(oaList);
 
 
+        // for B
         Item b = new Item();
         b.setName("B");
         b.setPrice(30);
@@ -45,14 +47,20 @@ public class ItemMap {
 
         b.setOfferList(obList);
 
+        // for C
 
         Item c = new Item();
         c.setName("C");
         c.setPrice(20);
 
+
+        // for D
+
         Item d = new Item();
         d.setName("D");
         d.setPrice(15);
+
+        // for E
 
         Item e = new Item();
         e.setName("E");
@@ -66,6 +74,8 @@ public class ItemMap {
         e.setItemOffer(itemOfferB);
 
 
+        // for F
+
         Item f = new Item();
         f.setName("F");
         f.setPrice(10);
@@ -76,6 +86,10 @@ public class ItemMap {
         itemOfferF.setFreeItemQuantity(1);
 
         f.setItemOffer(itemOfferF);
+
+
+
+        // for G
 
 
         itemMap.put("A",a);
