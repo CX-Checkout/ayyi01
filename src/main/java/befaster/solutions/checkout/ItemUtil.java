@@ -33,7 +33,6 @@ public class ItemUtil {
                 if(finalItems.contains(itemOffer.getFreeItem().getName())){
                     int itemCount = itemsWithCount.get(key);
                     boolean first=true;
-                    while (itemCount>=itemOffer.getItemQuantity()){
                         if(first && ){
 
                         }
@@ -59,3 +58,5 @@ public class ItemUtil {
         return finalItems;
     }
 }
+
+                    while (itemCount>=itemOffer.getItemQuantity()){

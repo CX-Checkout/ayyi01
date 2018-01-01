@@ -63,6 +63,7 @@ public class Item {
             int amount = 0;
 
             for(Offer offer:offerList) {
+                System.out.println("quantity::"+quantity);
 
                 System.out.println("quantity::"+quantity);
                 if (quantity % offer.getQuantity() == 0) {
