@@ -178,17 +178,17 @@ public class ItemMap {
         // for X
         Item x = new Item();
         x.setName("X");
-        f.setPrice(90);
+        x.setPrice(90);
 
         // for Y
         Item y = new Item();
-        f.setName("Y");
-        f.setPrice(10);
+        y.setName("Y");
+        y.setPrice(10);
 
         // for Z
         Item z = new Item();
-        f.setName("Z");
-        f.setPrice(50);
+        z.setName("Z");
+        z.setPrice(50);
 
 
         itemMap.put("A",a);
