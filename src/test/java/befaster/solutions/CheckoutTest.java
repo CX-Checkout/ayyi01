@@ -10,6 +10,7 @@ public class CheckoutTest {
     public void testCheckout(){
         System.out.println(Checkout.checkout("FFFFFFAAAB"));
         System.out.println(Checkout.checkout("ABCDEFABCDEF"));
+        System.out.println(Checkout.checkout("ABCDEF"));
 
 
     }
