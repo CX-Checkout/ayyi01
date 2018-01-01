@@ -34,7 +34,7 @@ public class ItemUtil {
                     int itemCount = itemsWithCount.get(key);
                     boolean first=true;
                     while (itemCount>=itemOffer.getItemQuantity()){
-                        if(first && itemCount>=itemOffer.getItemQuantity()){
+                        if(first && itemCount==itemOffer.getItemQuantity()){
                             break;
                         }
                         if(itemCount>=itemOffer.getItemQuantity() ){
