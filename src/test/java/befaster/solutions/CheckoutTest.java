@@ -11,7 +11,7 @@ public class CheckoutTest {
         System.out.println(Checkout.checkout("FFFFFFAAAB"));
         System.out.println(Checkout.checkout("ABCDEFABCDEF"));
         System.out.println(Checkout.checkout("ABCDEF"));
-        System.out.println(Checkout.checkout("CDFFAECBDEAB"));
+        System.out.println(Checkout.checkout("CDFFAECBDEABZ"));
 
 
     }

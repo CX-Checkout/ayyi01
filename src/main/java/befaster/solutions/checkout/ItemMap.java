@@ -127,68 +127,68 @@ public class ItemMap {
 
         // for N
         Item n = new Item();
-        f.setName("N");
-        f.setPrice(40);
+        n.setName("N");
+        n.setPrice(40);
 
         // for O
         Item o = new Item();
-        f.setName("O");
+        o.setName("O");
+        o.setPrice(10);
+
+        // for P
+        Item p = new Item();
+        p.setName("P");
+        p.setPrice(50);
+
+        // for Q
+        Item q = new Item();
+        q.setName("Q");
+        q.setPrice(30);
+
+        // for R
+        Item r = new Item();
+        r.setName("R");
+        r.setPrice(50);
+
+        // for S
+        Item s = new Item();
+        s.setName("S");
+        s.setPrice(30);
+
+        // for T
+        Item t = new Item();
+        t.setName("T");
+        t.setPrice(20);
+
+        // for U
+        Item u = new Item();
+        u.setName("U");
+        u.setPrice(40);
+
+        // for V
+        Item v = new Item();
+        v.setName("V");
+        v.setPrice(50);
+
+        // for W
+        Item w = new Item();
+        w.setName("W");
+        w.setPrice(20);
+
+        // for X
+        Item x = new Item();
+        x.setName("X");
+        f.setPrice(90);
+
+        // for Y
+        Item y = new Item();
+        f.setName("Y");
         f.setPrice(10);
 
-        // for G
-        Item f = new Item();
-        f.setName("F");
-        f.setPrice(10);
-
-        // for G
-        Item f = new Item();
-        f.setName("F");
-        f.setPrice(10);
-
-        // for G
-        Item f = new Item();
-        f.setName("F");
-        f.setPrice(10);
-
-        // for G
-        Item f = new Item();
-        f.setName("F");
-        f.setPrice(10);
-
-        // for G
-        Item f = new Item();
-        f.setName("F");
-        f.setPrice(10);
-
-        // for G
-        Item f = new Item();
-        f.setName("F");
-        f.setPrice(10);
-
-        // for G
-        Item f = new Item();
-        f.setName("F");
-        f.setPrice(10);
-
-        // for G
-        Item f = new Item();
-        f.setName("F");
-        f.setPrice(10);
-
-        // for G
-        Item f = new Item();
-        f.setName("F");
-        f.setPrice(10);
-
-        // for G
-        Item f = new Item();
-        f.setName("F");
-        f.setPrice(10);
-
-        // for G
-        Item f = new Item();
-        f.setName("F");
-        f.setPrice(10);
+        // for Z
+        Item z = new Item();
+        f.setName("Z");
+        f.setPrice(50);
 
 
         itemMap.put("A",a);
@@ -197,6 +197,26 @@ public class ItemMap {
         itemMap.put("D",d);
         itemMap.put("E",e);
         itemMap.put("F",f);
+        itemMap.put("G",g);
+        itemMap.put("H",h);
+        itemMap.put("I",i);
+        itemMap.put("J",j);
+        itemMap.put("K",k);
+        itemMap.put("L",l);
+        itemMap.put("M",m);
+        itemMap.put("N",n);
+        itemMap.put("O",o);
+        itemMap.put("P",p);
+        itemMap.put("Q",q);
+        itemMap.put("R",r);
+        itemMap.put("S",s);
+        itemMap.put("T",t);
+        itemMap.put("U",u);
+        itemMap.put("V",v);
+        itemMap.put("W",w);
+        itemMap.put("X",x);
+        itemMap.put("Y",y);
+        itemMap.put("Z",z);
 
     }
 
