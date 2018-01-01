@@ -32,7 +32,11 @@ public class ItemUtil {
             if(itemOffer!=null){
                 if(finalItems.contains(itemOffer.getFreeItem().getName())){
                     int itemCount = itemsWithCount.get(key);
+                    boolean first=true;
                     while (itemCount>=itemOffer.getItemQuantity()){
+                        if(first && ){
+
+                        }
                         if(itemCount>=itemOffer.getItemQuantity() ){
 
                             String toReplace = "";
