@@ -1,5 +1,6 @@
 package befaster.solutions;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 /**
@@ -12,6 +13,10 @@ public class CheckoutTest {
         System.out.println(Checkout.checkout("ABCDEFABCDEF")==300);
         System.out.println(Checkout.checkout("ABCDEF")==165);
         System.out.println(Checkout.checkout("CDFFAECBDEABZ")==350);
+
+        assert Checkout.checkout("HHHHHH")==55;
+        assert Checkout.checkout("HHHHHHHHHH")==80;
+        assert Checkout.checkout("HHHHHHHHHHHH")==100;
 
 
     }
