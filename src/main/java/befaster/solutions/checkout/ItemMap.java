@@ -131,6 +131,17 @@ public class ItemMap {
         k.setName("K");
         k.setPrice(80);
 
+        Offer ok = new Offer();
+        ok.setQuantity(2);
+        ok.setAmount(150);
+
+
+        List<Offer> okList = new ArrayList<>();
+        okList.add(ok);
+        Collections.sort(okList);
+
+        k.setOfferList(okList);
+
         // for L
         Item l = new Item();
         l.setName("L");
