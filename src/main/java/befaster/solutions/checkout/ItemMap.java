@@ -207,6 +207,15 @@ public class ItemMap {
         r.setName("R");
         r.setPrice(50);
 
+
+        ItemOffer itemOfferR = new ItemOffer();
+        itemOfferR.setFreeItem(q);
+        itemOfferR.setItemQuantity(3);
+        itemOfferR.setFreeItemQuantity(1);
+
+        r.setItemOffer(itemOfferR);
+
+
         // for S
         Item s = new Item();
         s.setName("S");
