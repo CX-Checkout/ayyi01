@@ -157,6 +157,13 @@ public class ItemMap {
         n.setName("N");
         n.setPrice(40);
 
+        ItemOffer itemOfferN = new ItemOffer();
+        itemOfferN.setFreeItem(m);
+        itemOfferN.setItemQuantity(3);
+        itemOfferN.setFreeItemQuantity(1);
+
+        n.setItemOffer(itemOfferN);
+
         // for O
         Item o = new Item();
         o.setName("O");
