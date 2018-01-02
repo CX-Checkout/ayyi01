@@ -243,6 +243,22 @@ public class ItemMap {
         v.setName("V");
         v.setPrice(50);
 
+        Offer ov = new Offer();
+        ov.setQuantity(3);
+        ov.setAmount(130);
+
+        Offer ov1 = new Offer();
+        ov1.setQuantity(2);
+        ov1.setAmount(90);
+
+
+        List<Offer> ovList = new ArrayList<>();
+        ovList.add(ov);
+        ovList.add(ov1);
+        Collections.sort(ovList);
+
+        v.setOfferList(ovList);
+
         // for W
         Item w = new Item();
         w.setName("W");

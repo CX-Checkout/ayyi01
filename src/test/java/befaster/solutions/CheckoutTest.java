@@ -39,6 +39,11 @@ public class CheckoutTest {
         assert Checkout.checkout("UUU")==120;
         assert Checkout.checkout("UUUU")==120;
 
+        assert Checkout.checkout("VV")==90;
+        assert Checkout.checkout("VVV")==130;
+        assert Checkout.checkout("VVVV")==180;
+        assert Checkout.checkout("VVVVVV")==260;
+
 
     }
 
