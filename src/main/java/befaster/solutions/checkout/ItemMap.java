@@ -231,6 +231,13 @@ public class ItemMap {
         u.setName("U");
         u.setPrice(40);
 
+        ItemOffer itemOfferU = new ItemOffer();
+        itemOfferU.setFreeItem(u);
+        itemOfferU.setItemQuantity(3);
+        itemOfferU.setFreeItemQuantity(1);
+
+        u.setItemOffer(itemOfferU);
+
         // for V
         Item v = new Item();
         v.setName("V");
