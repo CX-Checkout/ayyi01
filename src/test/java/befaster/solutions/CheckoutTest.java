@@ -24,7 +24,7 @@ public class CheckoutTest {
 
         assert Checkout.checkout("NNNM")==120;
         assert Checkout.checkout("NNNNM")==160;
-        assert Checkout.checkout("NNNNNNMMN")==300;
+        assert Checkout.checkout("NNNNNNMMN")==280;
 
 
     }
