@@ -190,6 +190,18 @@ public class ItemMap {
         q.setName("Q");
         q.setPrice(30);
 
+
+        Offer oq = new Offer();
+        oq.setQuantity(3);
+        oq.setAmount(80);
+
+
+        List<Offer> oqList = new ArrayList<>();
+        oqList.add(oq);
+        Collections.sort(oqList);
+
+        q.setOfferList(oqList);
+
         // for R
         Item r = new Item();
         r.setName("R");

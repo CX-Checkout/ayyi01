@@ -29,6 +29,9 @@ public class CheckoutTest {
 
         assert Checkout.checkout("PPPPP")==200;
 
+        assert Checkout.checkout("QQ")==60;
+        assert Checkout.checkout("QQQ")==80;
+
 
     }
 
