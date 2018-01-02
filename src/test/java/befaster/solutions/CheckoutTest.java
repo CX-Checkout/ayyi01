@@ -8,10 +8,10 @@ import org.junit.Test;
 public class CheckoutTest {
     @Test
     public void testCheckout(){
-        System.out.println(Checkout.checkout("FFFFFFAAAB"));
-        System.out.println(Checkout.checkout("ABCDEFABCDEF"));
-        System.out.println(Checkout.checkout("ABCDEF"));
-        System.out.println(Checkout.checkout("CDFFAECBDEABZ"));
+        System.out.println(Checkout.checkout("FFFFFFAAAB")==200);
+        System.out.println(Checkout.checkout("ABCDEFABCDEF")==300);
+        System.out.println(Checkout.checkout("ABCDEF")==165);
+        System.out.println(Checkout.checkout("CDFFAECBDEABZ")==350);
 
 
     }

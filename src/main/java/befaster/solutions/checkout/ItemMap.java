@@ -100,6 +100,22 @@ public class ItemMap {
         h.setName("H");
         h.setPrice(10);
 
+        Offer oh = new Offer();
+        oh.setQuantity(10);
+        oh.setAmount(80);
+
+        Offer oh1 = new Offer();
+        oh1.setQuantity(5);
+        oh1.setAmount(45);
+
+        List<Offer> ohList = new ArrayList<>();
+        ohList.add(oh);
+        ohList.add(oh1);
+        Collections.sort(ohList);
+
+        h.setOfferList(ohList);
+
+
         // for I
         Item i = new Item();
         i.setName("I");
